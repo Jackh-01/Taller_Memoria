@@ -1,27 +1,38 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
+\usepackage{fancyhdr, graphicx, parskip}
 \usepackage[spanish]{babel}
 \usepackage{listings}
 \usepackage{graphicx}
-\graphicspath{ {images/} }
+\graphicspath{ {images} }
 \usepackage{cite}
+\usepackage [colorlinks = true, 
+            linkcolor = blue,
+            citecolor = black,
+            urlcolor = blue]{hyperref}
+            
 
 \begin{document}
-
 \begin{titlepage}
+\renewcommand{\headrulewidth}{3pt}
+\fancyhead[L]{}
+\fancyhead[R]{}
+    \includegraphics[width=4cm]{imagen.png}
     \begin{center}
-        \vspace*{1cm}
+        \vspace*{1cm} 
             
         \Huge
-        \textbf{Título del trabajo}
+        \textbf{Notacion de la memoria del computador}
             
-        \vspace{0.5cm}
+        \vspace{0.8 cm
+}
+        
         \LARGE
-        Subtítulo
+        Taller de la memoria 
             
         \vspace{1.5cm}
             
-        \textbf{Nombres y Apellidos del autor}
+        \textbf{Jackh Emmanuel Narvaez Guerra}
             
         \vfill
             
@@ -35,41 +46,36 @@
             
     \end{center}
 \end{titlepage}
+\thispagestyle{fancy}
 
 \tableofcontents
+ 
+\section{Introducción}
 
-\section{Sección introductoria}
-Esta es la primera sección, podemos agregar algunos elementos adicionales y todo será escrito correctamente. Más aún, si una palabra es demasiado larga y tiene que ser truncada, babel tratará de truncarla correctamente dependiendo del idioma.
 
-\section{Sección de contenido} \label{contenido}
 
-Esta sección es para ver qué pasa con los comandos 
-que definen texto
+\section{Defina que es la memoria del computador.}
 
-El paquete también agrega un comportamiento especial 
-a <<estas marcas para hacer citas textuales>> tal como 
-lo indican las reglas de la RAE. \cite{dirac}
+
+\section{Mencione los tipos de memoria que conozco.} \label{contenido}
+
+
+
+\section{Describa la manera como se gestiona la memoria en un computador.}
+
+
+
+\section{¿Qué hace que una memoria sea más rápida que otra?}
+
+\subsection{¿Por qué esto es importante?}
+
+
+
+\section{Conclusión} \label{conclulsion}
+
 
 \begin{lstlisting}
-#include <stdio.h>
-#define N 10
-/* Block
- * comment */
 
-int main()
-{
-    int i;
-
-    // Line comment.
-    puts("Hello world!");
-    
-    for (i = 0; i < N; i++)
-    {
-        puts("LaTeX is also great for programmers!");
-    }
-
-    return 0;
-}
 \end{lstlisting}
 
 A continuación se presenta el logo de C++ Figura (\ref{fig:cpplogo})
@@ -83,9 +89,9 @@ A continuación se presenta el logo de C++ Figura (\ref{fig:cpplogo})
 
 En la sección de teoremas (\ref{contenido})
 
-\section{Conclusión} \label{conclulsion}
 
-\bibliographystyle{IEEEtran}
+
+\bibliographystyle{IEEEtran} 
 \bibliography{references}
 
 \end{document}
